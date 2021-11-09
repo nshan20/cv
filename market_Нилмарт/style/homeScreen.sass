@@ -1,0 +1,969 @@
+$bord:0px
+*
+  margin: 0
+  padding: 0
+
+*::before,
+*::after
+  box-sizing: border-box
+
+
+.header
+  border: solid $bord red
+  width: 100%
+
+.information
+  height: 45px
+  left: 0px
+  top: 0px
+  background: #F6F6F6
+
+.contact_nav
+  width: 1140px
+  height: 100%
+  border: red solid $bord
+  margin: auto
+  display: flex
+
+.phone
+  display: flex
+  img
+    margin-top: 17.01px
+    height: 12px
+.phone_header
+  border: solid $bord red
+  width: 50%
+
+
+.phone__number
+  border: solid $bord blue
+  width: 128px
+  height: 19px
+  margin-left: 6px
+  margin-top: 14px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 18px
+.num2
+  margin-left: 29px
+  width: 125px
+  height: 19px
+  font-size: 16.5px
+.txt
+  margin-left: 7px
+  width: 158px
+  height: 16px
+  font-size: 16.5px
+  color: #222222
+
+.nav
+  border: solid $bord blue
+  width: 50%
+  margin-left: auto
+  margin-top: 0
+.menu
+  display: flex
+  flex-direction: row-reverse
+  p
+    margin-right: 44px
+    margin-top: -7px
+    font-size: 17px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    color: #222222
+    &::after
+      content: ""
+      background: #0b0000
+      display: block
+      width: 100%
+      height: 1px
+      margin-top: -5px
+  .menu_txt
+    margin-right: 0
+    &::after
+      content: ""
+      background: #0b0000
+      display: block
+      width: 100%
+      height: 1px
+.menu_position
+  width: 362px
+  height: 18px
+  margin-left: auto
+  margin-top: 17px
+
+.logo_slider_search
+  width: 1140px
+  margin: auto
+  margin-top: 13px
+.logo_search
+  height: 68px
+  width: 100%
+  background-color: #ffffff
+  display: flex
+  justify-content: space-between
+.logo
+  display: flex
+  width: 202px
+  height: 68px
+  img
+    margin-left: -0.5px
+
+.logo_textBog
+  color: #8BB655
+  width: 158px
+  height: 59px
+  font-family: Circe
+  font-size: 42px
+  margin-top: -8px
+  margin-left: 6px
+.logo_textMin
+  font-size: 11px
+  margin-top: -23px
+  margin-left: 10px
+  color: #858585
+  font-weight: 900
+.search
+  width: 397px
+  height: 57px
+  display: flex
+  input
+    width: 304px
+    height: 33px
+    margin-top: 18px
+    margin-left: 7px
+    border: none
+    border-bottom: 2px solid #0b0000
+.search_icon
+  position: absolute
+  margin-top: 23px
+  margin-left: 284px
+  border-width: 0 0 2px
+  z-index: 1
+  color: #0b0000
+.shopping-cart
+  width: 53px
+  height: 57px
+  background-color: #9B9B9B
+  display: flex
+  justify-content: center
+  align-content: center
+  margin-left: 32px
+  &:hover
+    background-color: #FD8006
+  .shopping-cart-img
+    width: 20px
+    height: 20px
+    margin-top: 23px
+    margin-left: 10px
+    color: white
+.shopping-cart:hover .basket-of-products
+  display: flex
+.basket-of-products
+  position: absolute
+  display: none
+  width: 426px
+  height: 400px
+  margin-top: 57px
+  margin-left: -372px
+  z-index: 1
+  align-items: flex-end
+  .products-element
+    width: 426px
+    height: 388px
+    background-color: #FFFFFF
+    .products-title
+      width: 426px
+      height: 61px
+      border: 1px solid #D6D6D7
+      p
+        font-size: 23px
+        margin: auto
+        width: 157px
+        margin-top: 13px
+    .goods-and-quantity
+      width: 426px
+      height: 154px
+      overflow-y: scroll
+.goods-and-quantity::-webkit-scrollbar
+  width: 5px
+.goods-and-quantity::-webkit-scrollbar-thumb
+  background: #8BB655
+  border-radius: 10px
+.product-card-in-the-basket
+  width: 421px
+  height: 78px
+  background: #FFFFFF
+  display: flex
+  justify-content: center
+  border-top: #D6D6D7 solid 1px
+.product-card-in-the-basket-components
+  width: 386px
+  height: 40px
+  margin-top: 20px
+  display: flex
+  img
+    height: 40px
+  .product-card-in-the-basket-components-title
+    font-size: 16px
+    line-height: 18px
+    color: #222222
+    width: 118px
+    height: 38px
+    margin-left: 21px
+  .product-card-in-the-basket-number
+    width: 71px
+    height: 19px
+    background: #FFFFFF
+    margin-top: 9px
+    margin-left: 33px
+    display: flex
+    justify-content: space-between
+    div
+      width: 19px
+      height: 19px
+      background: #8BB655
+      padding-bottom: 5px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+    p
+      margin-top: -4px
+.product-card-in-the-basket-sum
+  width: 54px
+  height: 22px
+  font-size: 19px
+  color: #FD8006
+  font-weight: 500
+  margin-left: 31px
+  margin-top: 5px
+.product-card-in-the-basket-close
+  width: 10px
+  height: 10px
+  margin-top: 6px
+  margin-left: 24px
+
+.x_clixk_img
+  width: 20px
+  height: 20px
+  position: absolute
+  margin-left: 398px
+  margin-top: -42px
+  cursor: pointer
+
+.the-outcome
+  width: 100%
+  height: 106px
+  .the-outcome-click
+    width: 388px
+    height: 48px
+    background: #FFFFFF
+    display: flex
+    justify-content: space-between
+    margin: auto
+    margin-top: 15px
+    button
+      width: 182px
+      background: #FD8006
+      color: #FFFFFF
+      border: none
+    .the-outcome-number
+      width: 139px
+      display: flex
+      margin-top: 10px
+      font-size: 20px
+
+.the-outcome-present
+  width: 390px
+  height: 30px
+  background: #FFFFFF
+  margin: auto
+  display: flex
+  justify-content: space-between
+  margin-top: 18px
+  img
+    width: 15px
+    height: 15px
+    margin-top: 5px
+  p
+    width: auto
+.color-orange
+  color: #FD8006
+.free-shipping
+  width: 100%
+  height: 52px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 17px
+  p
+    margin-top: 10px
+    margin-left: 10px
+  img
+    margin-left: -6px
+
+.number_shopping
+  margin-left: 3px
+  margin-top: 5px
+  color: white
+
+
+
+.home_menu
+  height: 34px
+  width: 100%
+  background-color: white
+  margin-top: 40px
+  display: flex
+.menu_products
+  font-family: sans-serif
+  //position: absolute
+  display: flex
+  background: white
+  margin-left: 5%
+  p
+    color: #222222
+    margin-top: 4px
+    margin-left: 10px
+    font-size: 16px
+
+.Perfumery
+  margin-left: 15px
+  p
+    margin-left: 18px
+    font-weight: bold
+.Cosmetics
+  margin-left: 52px
+  p
+    margin-left: 10px
+    font-weight: bold
+.Herbs
+  margin-left: 52px
+  p
+    margin-left: 16px
+.Oils
+  margin-left: 55px
+  p
+    margin-left: 12px
+.Nutrition
+  margin-left: 59px
+  p
+    margin-left: 16px
+.Stock
+  margin-left: 57px
+  p
+    margin-left: 15px
+.Brands
+  margin-left: 60px
+  p
+    margin-left: 13px
+
+
+.slider
+  height: 430px
+  width: 100%
+  margin-top: 20px
+  background-image: url("https://sun9-4.userapi.com/impg/iTlLiNBjtcTuA6ndnZAXxBQwmO_2emfl7ui_kA/3cL8hUUyV28.jpg?size=1140x430&quality=95&sign=023ab26b03e5155beb9c087b19500e8c&type=album")
+
+
+.carousel_blog
+  width: 100%
+  height: 430px
+  display: flex
+.carousel-dark .carousel-indicators [data-bs-target]
+  width: 19px
+  height: 19px
+  background-color: #ffffff
+  border-radius: 50%
+  border: white solid 2px
+  margin-top: 10px
+
+.carousel-indicators
+  margin-bottom: 23px
+.carousel-indicators .active
+  background-color: #222222
+  color: #0b0000
+
+.carousel_info, .carousel_poto
+  width: 50%
+.carousel_txt
+  width: 512px
+  margin-left: 56px
+  margin-top: 63px
+  p
+    color: white
+.carousel_title
+  width: 512px
+  height: 86px
+  left: 206px
+  top: 284px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: bold
+  font-size: 42px
+  line-height: 43px
+  margin-left: -3px
+.substring
+  width: 390px
+  height: 20px
+  left: 206px
+  top: 385px
+  font-size: 18px
+  line-height: 14px
+.blog_Name_Email
+  //background-color: red
+  input
+    width: 224px
+    height: 52px
+    padding-left: 13px
+    border-radius: 0px
+    font-size: 18px
+    color: white
+    border: white 1px solid
+    background: transparent
+.blog_email
+  margin-left: 10px
+.checkbox
+  color: white
+  margin-top: 10px
+  font-size: 15px
+.img_button
+  width: 226px
+  height: 59px
+  left: 205px
+  top: 517px
+  background: linear-gradient(180deg, #FDB806 -61.02%, #FD9A06 51.01%, #FD8006 167.8%)
+  box-shadow: 0px 3px 20px rgba(253, 128, 6, 0.7)
+  border-radius: 2px
+  color: white
+  margin-top: -6px
+  font-size: 20px
+  padding-bottom: 1px
+  padding-left: 0px
+  border: none
+
+.carousel_poto
+  //border: #0b0000 solid 1px
+  img
+    position: absolute
+    margin-top: 77px
+    margin-left: 34px
+.decoration_1
+  position: absolute
+.decoration_2
+  z-index: 0
+  position: absolute
+  margin-left: 86.4%
+  margin-top: 214px
+
+//========main
+.main
+  width: 1140px
+  margin: auto
+  .main_Title
+    width: 1140px
+    p
+      width: 247px
+      height: 37px
+      left: 148px
+      margin-top: 54px
+      //top: 703px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 37px
+      line-height: 37px
+.filters
+  width: 100%
+  height: 37px
+  background-color: #ffffff
+  margin-top: 5px
+  display: flex
+  .filters_button
+    width: 159px
+    height: 37px
+    background: #ffffff
+    margin-left: 25px
+    border: solid 1px #999999
+    &:hover
+      background: #8BB655
+    &:hover .menu_top
+      display: flex
+      z-index: 1
+  .filters_title
+    width: 88px
+    border-right: 1px solid #D1D1D1
+    p
+      margin-top: 6px
+      font-size: 16px
+      display: flex
+      &::after
+        content: ""
+        background-color: #D1D1D1
+        width: 1px
+        height: 29px
+        display: block
+        margin-left: 22px
+  .Brand_name,.GroupGroup,.Concentration
+      margin-left: 14px
+
+.menu_top
+  position: absolute
+  width: 279px
+  //background-color: #0b0000
+  display: none
+  margin-top: 5px
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.3)
+
+.menu_list
+  width: 279px
+  //height: 364px
+  margin-top: 10px
+  box-shadow: 0px 6px 13px rgba(0, 0, 0, 0.3)
+  display: block
+  flex-direction: column
+  background-color: #FFFFFF
+
+.list_search
+  width: 243px
+  height: 34px
+  margin: auto
+  display: flex
+  background-color: white
+  border-bottom: solid 1px #A7A7A7
+  margin-top: 18px
+  input
+    border: none
+    padding-left: 1px
+  img
+    width: 18px
+    height: 18px
+    margin-top: 5px
+    margin-left: 36px
+
+.list_check
+  width: 239px
+  height: 224px
+  margin: auto
+  margin-top: 17px
+  overflow: auto
+  &::-webkit-scrollbar
+    width: 4px
+  &::-webkit-scrollbar-thumb
+    background: #8BB655
+    border-radius: 10px
+  .list_check_title
+    display: flex
+    height: 29px
+    p
+      margin-left: 10px
+      margin-top: -2px
+    input
+      display: block
+      width: 18px
+      height: 18px
+      background-color: #8BB655
+      color: white
+
+.list_button
+  width: 237px
+  height: 40px
+  background-color: #ffffff
+  margin: auto
+  padding-bottom: 57px
+  display: flex
+  justify-content: space-between
+  margin-top: 15px
+  //padding-top: 10px
+  input
+    width: 114px
+    height: 40px
+    border: #FD8006 solid 1px
+  .Apply_button
+    color: white
+    background: #FD8006
+  .Reset_button
+    color: #FD8006
+    background-color: #FFFFFF
+.GroupGroup
+  .list_check
+    padding-top: 8px
+
+.commodity_blog
+  margin: auto
+  width: 1098px
+  //background-color: #0b0000
+  .commodityDepartment
+    height: 880px
+    margin-top: 40px
+  .commodity_Department
+    width: 100%
+    //background-color: aqua
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-content: space-between
+    .commodity_cards
+      width: 220px
+      height: 419px
+      background-color: #ffffff
+      .slide_photo
+        width: 100%
+        height: 26px
+        display: flex
+        justify-content: space-between
+      .cards_bigPoto
+        width: 100%
+        height: 219px
+        //background-color: #0b0000
+        display: flex
+        justify-content: center
+        img
+          height: 184px
+          margin-top: 35px
+          //margin-left: 51px
+        .discount
+          position: absolute
+          width: 58px
+          height: 30px
+          border: 1px solid #E2E2E2
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1)
+          display: flex
+          justify-content: center
+          margin-top: 26px
+          margin-left: -192px
+          p
+            color: #8BB655
+            font-weight: 500
+            font-size: 15px
+            line-height: 18px
+            margin-top: 5px
+.commodity_information
+  width: 100%
+  margin-top: 34px
+  .price
+    display: flex
+    p
+      color: #FD8006
+      font-weight: 700
+      font-size: 18px
+      line-height: 22px
+      margin-left: 1px
+    i
+      margin-left: 12px
+      color: #222222
+      font-size: 16px
+      &::before
+        content: ""
+        display: block
+        background: #0b0000
+        width: 40px
+        height: 1px
+        margin-top: 13px
+        position: absolute
+  .delivery
+    width: 100%
+    background-color: #FFFFFF
+    margin-top: -6px
+    img
+      padding-right: 10px
+    .delivery_foto_left
+      margin-left: 3px
+.commodity_title
+  p
+    font-size: 18px
+    margin-top: 8px
+.description
+  p
+    font-size: 15px
+    margin: 0px
+    margin-top: -12px
+    position: relative
+.quality
+  margin-top: 3px
+  ion-icon
+    font-size: 11px
+    color: #FDB806
+  .last_stars
+    color: #C5C5C5
+.More_products
+  width: 100%
+  height: 53px
+  //background: blue
+  margin-top: 41px
+  display: flex
+  justify-content: center
+  button
+    width: 200px
+    height: 53px
+    font-size: 18px
+    color: #222222
+    border: 1px solid #666666
+    padding-right: 15px
+    ion-icon
+      margin-top: 5px
+      margin-left: 5px
+      position: absolute
+.sector_1
+  //background-color: #FD8006
+.sector_2
+
+  margin-top: -5px
+  .commodity_Department_2
+    margin-top: 36px
+  .button_click
+    display: flex
+    width: 100%
+    height: 107px
+    button
+      width: 175px
+      height: 35px
+      margin-top: 59px
+      margin-left: 16px
+      border: brown 1px solid
+      color: #F43434
+    p
+      margin-top: 56px
+      width: auto
+    .click_text1,.click_text2,.click_text3
+      a
+        color: #AEAEAE
+        &:hover
+          color: #F43434
+    .click_text1
+      font-size: 16px
+      margin-left: 20px
+      b
+        color: #FD8006
+    .click_text2
+      margin-left: 13px
+      font-size: 16px
+      b
+        color: #FD8006
+    .click_text3
+      margin-left: 10px
+      font-size: 16px
+      b
+        color: #FD8006
+.discount__e-mail
+  width: 100%
+  height: 385px
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.19)
+  margin-top: 48px
+  display: flex
+  justify-content: center
+  .among
+    width: 1112px
+    height: 359px
+    border: 1px solid #DEB84A
+    margin: auto
+    display: flex
+    justify-content: space-between
+    .background_picture_2
+      margin-top: auto
+      height: 229px
+      width: 162px
+    .background_picture_1
+      margin-top: 6px
+.harmful_interface
+  position: absolute
+  width: 1112px
+  height: 359px
+.interface_taitl
+  width: 734px
+  height: 61px
+  margin: auto
+  display: flex
+  font-size: 29px
+  margin-top: 68px
+  p
+    text-align: center
+    line-height: 30px
+  .color
+    color: #FD8006
+.E_mail
+  width: 306px
+  height: 67px
+  margin: auto
+  margin-top: 36px
+
+  input
+    width: 306px
+    height: 47px
+    margin-top: 18px
+    border: 1px solid #D6D6D6
+    box-sizing: border-box
+    border-radius: 2px
+  p
+    line-height: 5px
+    position: absolute
+    font-size: 14px
+.button_sector
+  height: 53px
+  width: 960px
+  margin: auto
+  margin-top: 16px
+  display: flex
+  justify-content: space-between
+  button
+    width: 306px
+    height: 53px
+    background: linear-gradient(180deg, #FDB806 -61.02%, #FD8006 167.8%)
+    font-size: 19px
+    border: none
+    &:hover
+      box-shadow: 0px 4px 13px rgba(255, 126, 0, 0.6)
+      border-radius: 2px
+      background-color: #FFBB3B
+.footer
+  height: 331px
+  width: 100%
+  background-image: url("../photo/futrFon.png")
+  margin-top: 59px
+  .contacts-sector
+    height: 331px
+    width: 1140px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    .sector_logo,.sector_contacts,.sector_social-networks
+      width: 300px
+
+.footer_logo
+  margin-top: 36px
+  .logo_text
+    margin-top: 6px
+.footer_menu
+  width: 300px
+  p
+    margin: 0
+    margin-left: 32px
+    margin-top: 38px
+.top_info
+  width: 100%
+.info_footer
+  margin-top: 127px
+.phone_footer
+  display: block
+  .footer_phone__number
+    width: 100%
+    font-size: 21px
+    font-weight: 500
+    display: flex
+    justify-content: flex-end
+    margin-left: auto
+    margin-top: 53px
+    font-family: Montserrat
+    font-style: normal
+    .phone_icon
+      height: 15px
+      width: 15px
+      margin-right: 11px
+    img
+      margin-top: 0px
+      width: 20px
+      height: 20px
+    .messenger
+      width: 72px
+      height: 20px
+
+
+  .footer_phone__number2
+    margin: auto
+    font-size: 21px
+    width: 170px
+.wacap
+  background: #1BD741
+  width: 20px
+  height: 20px
+  img
+    width: 20px
+    height: 20px
+
+.viber
+  background: #7D3DAF
+.telegram
+  background: #61A8DE
+.footer_gmail
+  display: flex
+  margin-top: 20px
+  ion-icon
+    margin-left: 36px
+    margin-bottom: 2px
+  p
+    font-size: 18px
+    margin-left: 10px
+    margin-top: -5px
+.footer_gps
+  display: flex
+  width: 250px
+  margin: auto
+  ion-icon
+    margin-left: 10px
+  p
+    margin-left: 20px
+    font-size: 17px
+    font-weight: 100
+    width: 250px
+.footer_map
+  position: absolute
+  width: 200px
+  margin-top: 25px
+  margin-left: 39px
+  a
+    color: #8BB655
+.contacts_footer
+  margin-top: 83px
+  p
+    margin-left: 31px
+    &::after
+      content: ""
+      display: block
+      background-color: #0b0000
+      width: 235px
+      height: 1px
+      margin-top: -5px
+      position: absolute
+.sector_social-networks_title
+  width: 100%
+  margin-top: 47px
+  p
+    text-align: right
+    width: auto
+    font-size: 17.5px
+.social-network-link
+  width: 195px
+  height: 41px
+  margin-left: auto
+  margin-top: -7px
+  display: flex
+  justify-content: space-between
+  .green_blog
+    background-color: #8BB655
+    width: 40.7px
+    height: 40.7px
+    display: flex
+    justify-content: center
+    align-items: center
+.button_Up
+  width: 100%
+  height: 41px
+  display: flex
+  justify-content: flex-end
+  margin-top: 53px
+.Up
+  width: 98px
+  height: 41px
+  background: #8BB655
+  border: none
+  font-weight: 500
+  font-size: 14px
+.networks_top_info
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  margin-top: 47px
